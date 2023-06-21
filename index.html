@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>German Grade Conversion(Uni-Assist)</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body class="bg-[#010313] text-white">
+    <!-- header -->
     <header class="bg-[#2B1B42] drop-shadow-2xl">
       <h1
         class="text-center text-xl sm:text-4xl md:text-6xl font-bold p-4 drop-shadow-2xl pb-6"
@@ -14,6 +23,7 @@
         German Grading Calculator
       </h1>
     </header>
+    <!-- main -->
     <main class="w-11/12 mx-auto my-10">
       <!-- first div -->
       <div class="mx-auto flex flex-col lg:flex-row gap-12 lg:gap-4 my-10">
@@ -152,6 +162,69 @@
         </table>
       </div>
     </main>
-    <footer></footer>
+
+    <!-- footer -->
+    <footer class="bg-[#2B1B42] flex flex-col items-center gap-4">
+      <div class="text-center mt-14">
+        <p class="font-bold text-base mb-4 px-4">
+          This is a german grading Website Developed By
+        </p>
+        <h1 class="uppercase text-2xl sm:text-6xl font-bold">
+          <span class="text-white">M M Rayhan</span>
+          <span class="text-[#a4bc46]">Parvez</span>
+        </h1>
+        <p class="font-bold text-base mt-1 px-4 text-[#a4bc46]">
+          High Integrity Systems (M.Sc.)
+        </p>
+        <p class="font-bold text-base mt-1 px-4 text-[#a4bc46]">
+          Frankfurt University of Applied Sciences
+        </p>
+        <p class="font-bold text-base mt-1 px-4 text-[#a4bc46]">
+          mmrp.cse@gmail.com
+        </p>
+      </div>
+
+      <div class="flex gap-4 text-4xl text-white">
+        <a
+          class="hover:scale-150 transition duration-150 ease-out hover:ease-in hover:text-pink-500"
+          target="_blank"
+          href="https://www.facebook.com/Attentive.Stupid/"
+        >
+          <ion-icon name="logo-facebook"></ion-icon
+        ></a>
+        <a
+          target="_blank"
+          class="hover:scale-150 transition duration-150 ease-out hover:ease-in hover:text-pink-500"
+          href="mailto: mmrp.cse@gmail.com"
+          ><ion-icon name="mail-sharp"></ion-icon
+        ></a>
+
+        <a
+          target="_blank"
+          class="hover:scale-150 transition duration-150 ease-out hover:ease-in hover:text-pink-500"
+          href="https://www.linkedin.com/in/rayhan60611/"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a
+          class="hover:scale-150 transition duration-150 ease-out hover:ease-in hover:text-pink-500"
+          target="_blank"
+          href="https://github.com/rayhan60611"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+      </div>
+      <div
+        class="bg-[#363958] w-full py-6 text-[#A4BC46] text-center font-bold px-4"
+      >
+        <p class="">
+          Copyright &copy;MMRP Developed By :
+          <a
+            class="text-white transition duration-150 ease-out hover:ease-in hover:text-pink-500"
+            href="https://www.facebook.com/Attentive.Stupid/"
+            target="_blank"
+            >M M Rayhan Parvez</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
