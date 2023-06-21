@@ -6,5 +6,105 @@
     <title>German Grade Conversion(Uni-Assist)</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="bg-[#010313] text-white">
+    <header class="bg-[#2B1B42] drop-shadow-2xl">
+      <h1
+        class="text-center text-xl sm:text-4xl md:text-6xl font-bold p-4 drop-shadow-2xl pb-6"
+      >
+        German Grading Calculator
+      </h1>
+    </header>
+    <main class="w-11/12 mx-auto my-10">
+      <div
+        class="w-11/12 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-4 my-10"
+      >
+        <!-- left section -->
+        <section class="bg-[#2B1B42] p-5 basis-1/2 rounded-lg">
+          <div
+            class="flex flex-col sm:flex-row gap-4 sm:justify-around sm:items-center items-start mb-8 mt-8"
+          >
+            <h1 class="font-bold">Achieved CGPA (N<sub>d</sub> )</h1>
+            <input
+              type="number"
+              class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center sm:w-auto w-full"
+              placeholder="Nd"
+            />
+          </div>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
+          >
+            <h1 class="font-bold">Highest CGPA (N<sub>Max</sub> )</h1>
+            <input
+              type="number"
+              class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center"
+              placeholder="Nmax"
+            />
+          </div>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
+          >
+            <h1 class="font-bold">Lowest CGPA (N<sub>Min</sub> )</h1>
+            <input
+              type="number"
+              class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center"
+              placeholder="Nmin"
+            />
+          </div>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
+          >
+            <h1 class="font-bold">Your German CGPA</h1>
+            <input
+              type="text"
+              class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center cursor-not-allowed bg-white"
+              disabled
+              readonly
+              placeholder="0.0"
+            />
+          </div>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
+          >
+            <h1 class="font-bold">German Elucidation</h1>
+            <input
+              type="text"
+              class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center cursor-not-allowed bg-white"
+              disabled
+              readonly
+              placeholder="Empty"
+            />
+          </div>
+        </section>
+        <!-- right section -->
+        <section
+          class="bg-[#2B1B42] basis-1/2 rounded-lg flex flex-col items-center justify-around p-4"
+        >
+          <div class="flex flex-col gap-4 justify-around items-center">
+            <h1 class="font-bold text-4xl">N <sub>d</sub></h1>
+            <p class="font-bold">
+              The average mark which you obtained (N<sub>d</sub> ).
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 justify-around items-center">
+            <h1 class="font-bold text-4xl">N <sub>Max</sub></h1>
+            <p class="font-bold">
+              The highest possible mark, (N<sub>Max</sub>)
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 justify-around items-center">
+            <h1 class="font-bold text-4xl">N <sub>Min</sub></h1>
+            <p class="font-bold text-justify">
+              The lowest pass mark, (N<sub>Min</sub>). The relevant mark for the
+              (Nmin) is the lowest passing mark required for the degree to be
+              awarded and not the lowest passing mark in any individual course
+              or subject.
+            </p>
+          </div>
+        </section>
+      </div>
+      <!-- second div -->
+      <div></div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
