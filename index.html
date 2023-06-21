@@ -29,41 +29,50 @@
       <div class="mx-auto flex flex-col lg:flex-row gap-12 lg:gap-4 my-10">
         <!-- left section -->
         <section class="bg-[#2B1B42] px-5 sm:px-0 sm:py-5 basis-1/2 rounded-lg">
+          <!-- achieved cgpa -->
           <div
             class="flex flex-col sm:flex-row gap-4 sm:justify-around sm:items-center items-start mb-8 mt-8"
           >
             <h1 class="font-bold">Achieved CGPA (N<sub>d</sub> )</h1>
             <input
+              id="input-achieved"
               type="number"
               class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center sm:w-auto w-full"
               placeholder="Nd"
             />
           </div>
+          <!-- Highest CGPA  -->
           <div
             class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
           >
             <h1 class="font-bold">Highest CGPA (N<sub>Max</sub> )</h1>
             <input
+              id="input-highest"
               type="number"
               class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center"
               placeholder="Nmax"
             />
           </div>
+
+          <!-- lowest cgpa -->
           <div
             class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
           >
             <h1 class="font-bold">Lowest CGPA (N<sub>Min</sub> )</h1>
             <input
+              id="input-lowest"
               type="number"
               class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center"
               placeholder="Nmin"
             />
           </div>
+          <!-- german cgpa -->
           <div
             class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
           >
             <h1 class="font-bold">Your German CGPA</h1>
             <input
+              id="input-german-cgpa"
               type="text"
               class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center cursor-not-allowed bg-white"
               disabled
@@ -71,11 +80,14 @@
               placeholder="0.0"
             />
           </div>
+
+          <!--German Elucidation-->
           <div
             class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
           >
             <h1 class="font-bold">German Elucidation</h1>
             <input
+              id="input-german-elucidation"
               type="text"
               class="p-2 sm:w-auto w-full font-bold text-[#2b1b42] text-xl rounded-lg border-none outline-none text-center cursor-not-allowed bg-white"
               disabled
@@ -87,6 +99,7 @@
             class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
           >
             <button
+              id="btn-calculate"
               class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 p-4 mx-auto w-full sm:w-11/12 rounded-lg text-xl font-bold"
             >
               Calculate
@@ -226,5 +239,6 @@
         </p>
       </div>
     </footer>
+    <script src="js/calculation.js"></script>
   </body>
 </html>
