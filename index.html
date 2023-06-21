@@ -15,11 +15,10 @@
       </h1>
     </header>
     <main class="w-11/12 mx-auto my-10">
-      <div
-        class="w-11/12 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-4 my-10"
-      >
+      <!-- first div -->
+      <div class="mx-auto flex flex-col lg:flex-row gap-12 lg:gap-4 my-10">
         <!-- left section -->
-        <section class="bg-[#2B1B42] p-5 basis-1/2 rounded-lg">
+        <section class="bg-[#2B1B42] px-5 sm:px-0 sm:py-5 basis-1/2 rounded-lg">
           <div
             class="flex flex-col sm:flex-row gap-4 sm:justify-around sm:items-center items-start mb-8 mt-8"
           >
@@ -74,10 +73,19 @@
               placeholder="Empty"
             />
           </div>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-around sm:items-center items-start mb-8"
+          >
+            <button
+              class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 p-4 mx-auto w-full sm:w-11/12 rounded-lg text-xl font-bold"
+            >
+              Calculate
+            </button>
+          </div>
         </section>
         <!-- right section -->
         <section
-          class="bg-[#2B1B42] basis-1/2 rounded-lg flex flex-col items-center justify-around p-4"
+          class="bg-[#2B1B42] basis-1/2 rounded-lg flex flex-col items-center justify-around p-5"
         >
           <div class="flex flex-col gap-4 justify-around items-center">
             <h1 class="font-bold text-4xl">N <sub>d</sub></h1>
@@ -103,7 +111,46 @@
         </section>
       </div>
       <!-- second div -->
-      <div></div>
+      <div class="w-full mx-auto bg-[#2B1B42] p-5 basis-1/2 rounded-lg">
+        <table
+          class="border-collapse border border-pink-300 table-auto w-full text-center font-bold"
+        >
+          <tbody>
+            <tr
+              class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+            >
+              <th class="border border-pink-300 p-2">Percentage</th>
+              <th class="border border-pink-300 p-2">German Grade</th>
+              <th class="border border-pink-300 p-2">Details</th>
+            </tr>
+            <tr>
+              <td class="border border-pink-300 p-2">90 - 100%</td>
+              <td class="border border-pink-300 p-2">1.0 - 1.5</td>
+              <td class="border border-pink-300 p-2">Very Good</td>
+            </tr>
+            <tr>
+              <td class="border border-pink-300 p-2">80 - 90%</td>
+              <td class="border border-pink-300 p-2">1.6 - 2.5</td>
+              <td class="border border-pink-300 p-2">Good</td>
+            </tr>
+            <tr>
+              <td class="border border-pink-300 p-2">65 - 80%</td>
+              <td class="border border-pink-300 p-2">2.6 - 3.5</td>
+              <td class="border border-pink-300 p-2">Satisfactory</td>
+            </tr>
+            <tr>
+              <td class="border border-pink-300 p-2">50 - 65%</td>
+              <td class="border border-pink-300 p-2">3.6 - 4.0</td>
+              <td class="border border-pink-300 p-2">Sufficient</td>
+            </tr>
+            <tr>
+              <td class="border border-pink-300 p-2">0 - 50%</td>
+              <td class="border border-pink-300 p-2">5.0 - 6.0</td>
+              <td class="border border-pink-300 p-2">Failed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
     <footer></footer>
   </body>
